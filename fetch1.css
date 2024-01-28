@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(255, 68, 0, 0.195);
+}
+
+/*.container */
+.container {
+    width: 70%;
+    background-color: skyblue;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    margin: 80px auto;
+    border-radius: 50px;
+}
+
+.centre {
+    color: orangered;
+    font-size: 2rem;
+}
+
+.left {
+    padding-top: 50px;
+}

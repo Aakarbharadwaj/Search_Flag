@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="fetch1.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <input type="text" placeholder="Search Flag">
+            <button>Search</button>
+        </div>
+        <div class="centre"></div>
+        <div class="right">
+            <img src="https://flagcdn.com/160x120/in.png" alt="">
+        </div>
+    </div>
+
+
+    <script src="api.js"></script>
+
+
+    <script>
+        let btn = document.querySelector("button");
+        let v;
+        btn.addEventListener("click", () => {
+            v = document.querySelector("input").value;
+            for (let i in data) {
+                if (data[i] == v) {
+                    document.querySelector("img").src = `https://flagcdn.com/160x120/${i}.png`;
+
+                    document.querySelector(".centre").innerHTML = `Flag of ${v}`;
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>
