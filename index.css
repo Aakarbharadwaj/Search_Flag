@@ -17,6 +17,14 @@ body {
     justify-content: space-between;
     margin: 80px auto;
     border-radius: 50px;
+
+    .left {
+        width: 30%;
+    }
+
+    input {
+        width: 80%;
+    }
 }
 
 .centre {
